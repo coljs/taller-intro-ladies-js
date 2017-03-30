@@ -1,0 +1,145 @@
+html {
+  --brown: #8a7956;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+html {
+  min-height: 100%;
+  background: url(../img/upfeathers.png);
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: var(--brown);
+}
+
+body {
+  margin: 0;
+}
+
+.card {
+  max-width: 500px;
+  background: white;
+  border-radius: 5px;
+  width: calc(100vw - 4rem);
+  box-shadow: rgba(0,0,0,0.2) 0 0 10px;
+}
+
+.carousel {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 5px 5px 0 0;
+  background-size: cover;
+}
+
+.photo-1 {
+  background-image: url(../img/grace-murray-hopper-1.jpg);
+}
+
+.photo-2 {
+  background-image: url(../img/grace-murray-hopper-2.jpg);
+  display: none;
+}
+
+.photo-3 {
+  background-image: url(../img/grace-murray-hopper-3.jpg);
+  display: none;
+}
+
+.photo-4 {
+  background-image: url(../img/grace-murray-hopper-4.jpg);
+  display: none;
+}
+
+.description {
+  overflow: hidden;
+  text-align: center;
+  padding: 2.3rem;
+}
+
+.name {
+  font-family: 'Noto Serif', serif;
+  font-weight: normal;
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem;
+}
+
+.profession {
+  margin: 0.5rem 0 1.5rem;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+}
+
+.button {
+  color: white;
+  background-color: var(--brown);
+  padding: 0.5rem 1.5rem 0.6rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  -webkit-font-smoothing: antialiased;
+  margin: 1.5rem 0.6rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.biography + .contact-form {
+  margin-top: 1.5rem;
+}
+
+.contact-form__field {
+  display: block;
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 0.7rem 1rem;
+  border: none;
+  color: var(--brown);
+}
+
+.contact-form__field--email {
+  border: 1px solid var(--brown);
+  border-radius: 5px 5px 0 0;
+}
+
+.contact-form__field--text {
+  border: 1px solid var(--brown);
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  resize: none;
+  height: 5rem;
+}
+
+::-webkit-input-placeholder {
+  color: var(--brown);
+}
+::-moz-placeholder {
+  color: var(--brown);
+}
+:-ms-input-placeholder {
+  color: var(--brown);
+}
+:-moz-placeholder {
+  color: var(--brown);
+}
+
+.button--submit {
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+}

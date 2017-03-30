@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjeta de Presentación</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Noto+Serif">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+  <div class="card">
+    <div class="carousel">
+      <div class="carousel-item photo-1"></div>
+      <div class="carousel-item photo-2"></div>
+      <div class="carousel-item photo-3"></div>
+      <div class="carousel-item photo-4"></div>
+    </div>
+    <div class="description">
+      <h1 class="name">Grace Murray Hopper</h1>
+      <p class="profession">Computer Scientist</p>
+      <button class="button" id="biography-btn">Biography</button>
+      <button class="button" id="contact-btn">Contact</button>
+      <div class="biography hidden" id="biography-cont">
+        Grace Brewster Murray Hopper (née Murray; December 9, 1906 – January 1, 1992) was an American computer scientist and United States Navy rear admiral. In 1944, she was one of the first programmers of the Harvard Mark I computer and invented the first compiler for a computer programming language. She popularized the idea of machine-independent programming languages, which led to the development of COBOL, one of the first high-level programming languages.
+      </div>
+      <form class="contact-form hidden" id="contact-form" action="https://fake-contact-server.now.sh" method="POST">
+        <input class="contact-form__field contact-form__field--email" type="email" name="email" placeholder="Email">
+        <textarea class="contact-form__field contact-form__field--text" name="text" placeholder="Contact text"></textarea>
+        <input class="button button--submit" type="submit" name="button" value="Send">
+      </form>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
